@@ -105,7 +105,34 @@ section {
   font-size: 40px;
   text-align: left;
 }
-#sect6{
+#sect6 {
   background-color: black;
   color: white;
+}
+#dvd {
+  width: 100px;
+}
+#dvd_tv {
+  display: flex;
+  align-items: center;
+}
+#flex_wrap {
+  display: flex;
+  justify-content: space-around;
+}
+#flex_wrap p {
+  width: 31%;
+}
+.cube:hover {
+  transform: rotateY(180deg);
+  transition-duration: 0.7s;
+}
+.cube {
+  transform: rotateY(0);
+  transition-duration: 0.7s;
+}
+.back img {
+  width: 100%;
+  height: 100%;
+  transform: scale(-1);
 }
