@@ -36,6 +36,26 @@ nav {
   color: white;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  width: 15vw;
+  position: relative;
+}
+#nav_wrap a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 4px;
+  background-color: rgb(92, 92, 255);
+}
+
+#nav_wrap a:hover:before {
+  width: 100%;
+}
+
+a::before {
+  transition: width 0.35s;
 }
 h1 {
   color: white;
@@ -65,13 +85,29 @@ h1 {
 }
 section h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 80px;
+  font-size: 60px;
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  transition-duration: 0.7s;
 }
+section h2:hover {
+  animation: 1s hover_title infinite;
+}
+@keyframes hover_title {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
 section p {
   font-family: "Montserrat", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
 }
 section {
   text-align: center;
