@@ -172,3 +172,14 @@ section {
   height: 100%;
   transform: scale(-1);
 }
+footer{
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer a{
+  color: black;
+  font-size: 42px;
+  font-family: "Montserrat", sans-serif;
+}
