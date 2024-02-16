@@ -123,7 +123,7 @@ section {
 }
 .wrap_sect {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 #sect2 {
   background-color: black;
@@ -279,4 +279,48 @@ form input {
   #flex_wrap p {
     width: 100%;
   }
+  #container {
+    grid-template-columns: repeat(1, 33%);
+  }
+}
+
+#burger_menu {
+  width: 20px;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition-duration: 0.7s;
+  z-index: 998;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1000px;
+}
+#burger_menu a {
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+#burger_menu:hover {
+  width: 50vw;
+  transition-duration: 0.7s;
+  padding-top: 0;
+}
+#burger_menu a:hover {
+  color: rgb(142, 142, 142);
+}
+#right-arrow {
+  width: 10px;
+  height: 10px;
+  transform: rotateZ(45deg);
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  position: fixed;
+  left: 0;
+  top: 49vh;
+  z-index: 999;
 }
