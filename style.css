@@ -2,8 +2,11 @@
 #wrap {
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  overflow-x: hidden;
 }
 body {
+  width: 100vw;
   overflow-x: hidden;
 }
 header {
@@ -246,19 +249,34 @@ a::before {
 #container img:hover {
   border: 4px solid yellow;
 }
-#email:invalid{
+#email:invalid {
   color: red;
 }
-#container_email{
+#container_email {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   display: flex;
   flex-direction: column;
 }
-form button{
+form button {
   margin-top: 30px;
 }
-form button, form input{
+form button,
+form input {
   height: 50px;
+}
+@media screen and (max-width: 720px) {
+  #nav_wrap a {
+    font-size: 6px;
+  }
+  footer a {
+    font-size: 6px;
+  }
+  #flex_wrap {
+    flex-direction: column;
+  }
+  #flex_wrap p {
+    width: 100%;
+  }
 }
